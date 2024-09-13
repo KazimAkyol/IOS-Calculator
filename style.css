@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
-
-
-
-
+.display{
+    margin-top: 2rem;
+    text-align: right;
+    color: white;
+    font-size: 3rem;
+    padding: 20px;
+}
 
 body{
     justify-content: center;
@@ -17,14 +20,14 @@ body{
 }
 
 .calculator{
-    width: 400px;
-    height: 600px;
+    width: 500px;
+    height: 800px;
     background-color: black;
     border-radius: 50px;
 }
 
 button{
-    padding: 29px;
+    padding: 30px;
     font-size: 2.5rem;
     border: none;
     border-radius: 50%;
@@ -46,4 +49,19 @@ button{
 
 button:hover{
     background-color: #413f3f;
+}
+
+.span2{
+    display: flex;
+    justify-content: flex-start;
+    grid-column: span2;
+    border-radius: 50px;
+}
+
+.color{
+    background-color: #9e9d9d;
+}
+
+.orange{
+    background-color: orange;
 }
