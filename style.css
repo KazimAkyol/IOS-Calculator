@@ -1,67 +1,70 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.display{
-    margin-top: 2rem;
-    text-align: right;
-    color: white;
-    font-size: 3rem;
-    padding: 20px;
+.display {
+  margin-top: 2rem;
+  text-align: right;
+  color: white;
+  font-size: 3rem;
+  padding: 20px;
 }
 
-body{
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.calculator{
-    width: 500px;
-    height: 800px;
-    background-color: black;
-    border-radius: 50px;
+.calculator {
+  width: 500px;
+  height: 800px;
+  background-color: black;
+  border-radius: 50px;
 }
 
-button{
-    padding: 30px;
-    font-size: 2.5rem;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #413f3f;
-    color: white;
+.buttons {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
 }
 
-.buttons{
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 20px;
+button {
+  padding: 30px;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #413f3f;
+  color: white;
 }
 
-button:hover{
-    background-color: #413f3f;
+button:hover {
+  background-color: #272727;
 }
 
-.span2{
-    display: flex;
-    justify-content: flex-start;
-    grid-column: span2;
-    border-radius: 50px;
+.span2 {
+  display: flex;
+  text-align: left;
+  grid-column: span 2;
+  border-radius: 50px;
+  padding-right: 140px;
 }
 
-.color{
-    background-color: #9e9d9d;
+.color {
+  background-color: #9e9d9d;
+  color: black;
 }
 
-.orange{
-    background-color: orange;
+.orange {
+  background-color: orange;
 }
